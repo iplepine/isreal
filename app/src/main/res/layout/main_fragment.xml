@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.SearchFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/isreal"></ImageView>
+
+
+    <ImageView
+        android:id="@+id/enroll"
+        android:layout_width="@dimen/main_button_width"
+        android:layout_height="@dimen/main_button_height"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/bg_selection"
+        android:padding="2dp"
+        android:src="@drawable/is_q"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/argument"></ImageView>
+
+    <ImageView
+        android:id="@+id/argument"
+        android:layout_width="@dimen/main_button_width"
+        android:layout_height="@dimen/main_button_height"
+        android:background="@drawable/bg_selection"
+        android:padding="2dp"
+        android:src="@drawable/is_w"
+        app:layout_constraintBottom_toBottomOf="@id/enroll"
+        app:layout_constraintLeft_toRightOf="@id/enroll"
+        app:layout_constraintRight_toLeftOf="@id/random"></ImageView>
+
+    <ImageView
+        android:id="@+id/random"
+        android:layout_width="@dimen/main_button_width"
+        android:layout_height="@dimen/main_button_height"
+        android:background="@drawable/bg_selection"
+        android:padding="2dp"
+        android:src="@drawable/is_e"
+        app:layout_constraintBottom_toBottomOf="@id/enroll"
+        app:layout_constraintLeft_toRightOf="@id/argument"
+        app:layout_constraintRight_toLeftOf="@id/search"></ImageView>
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="@dimen/main_button_width"
+        android:layout_height="@dimen/main_button_height"
+        android:background="@drawable/bg_selection"
+        android:padding="2dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/is_r"
+        app:layout_constraintBottom_toBottomOf="@id/enroll"
+        app:layout_constraintLeft_toRightOf="@id/random"
+        app:layout_constraintRight_toRightOf="parent"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="등록"
+        android:textColor="@color/main_button_text"
+        android:textSize="18dp"
+        app:layout_constraintLeft_toLeftOf="@id/enroll"
+        app:layout_constraintRight_toRightOf="@id/enroll"
+        app:layout_constraintTop_toBottomOf="@id/enroll"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="논란"
+        android:textColor="@color/main_button_text"
+        android:textSize="18dp"
+        app:layout_constraintLeft_toLeftOf="@id/argument"
+        app:layout_constraintRight_toRightOf="@id/argument"
+        app:layout_constraintTop_toBottomOf="@id/argument"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="랜덤"
+        android:textColor="@color/main_button_text"
+        android:textSize="18dp"
+        app:layout_constraintLeft_toLeftOf="@id/random"
+        app:layout_constraintRight_toRightOf="@id/random"
+        app:layout_constraintTop_toBottomOf="@id/random"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="검색"
+        android:textColor="@color/main_button_text"
+        android:textSize="18dp"
+        app:layout_constraintLeft_toLeftOf="@id/search"
+        app:layout_constraintRight_toRightOf="@id/search"
+        app:layout_constraintTop_toBottomOf="@id/search"></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
