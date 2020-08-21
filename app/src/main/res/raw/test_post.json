@@ -1,0 +1,34 @@
+[
+  {
+    "id" : 0,
+    "title" : "0번 루",
+    "rumors" : [
+      {
+        "id" : 0,
+        "type" : "text",
+        "data" : "구라임."
+      },
+      {
+        "id" : 1,
+        "type" : "text",
+        "data" : "레알임."
+      }
+    ]
+  },
+  {
+    "id" : 1,
+    "title" : "1번 루머",
+    "rumors" : [
+      {
+        "id" : 0,
+        "type" : "text",
+        "data" : "구라임."
+      },
+      {
+        "id" : 1,
+        "type" : "text",
+        "data" : "레알임."
+      }
+    ]
+  }
+]
